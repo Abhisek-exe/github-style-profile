@@ -33,7 +33,7 @@ const Projects = () => {
       github: "https://github.com/abhisekmahapatra/code-reviewer",
       demo: "https://code-reviewer-demo.herokuapp.com",
       icon: Code,
-      featured: false
+      featured: true
     }
   ];
 
@@ -53,9 +53,7 @@ const Projects = () => {
               return (
                 <Card 
                   key={index}
-                  className={`terminal-border p-6 hover:neon-glow transition-all duration-300 transform hover:scale-105 ${
-                    project.featured ? 'lg:col-span-2' : ''
-                  } animate-fade-in-up`}
+                  className="terminal-border p-6 hover:neon-glow transition-all duration-300 transform hover:scale-105 animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <div className="flex items-start justify-between mb-4">
